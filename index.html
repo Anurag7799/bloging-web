@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PHOTO BLOGE</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                WEBDEV<span>Pi</span>X
+            </div>
+            <div class="menu">
+                <a href="#">HOME</a>
+                <a href="#">CONTACT</a>
+                <a href="#">ABOUT</a>
+                <a href="#">DOWNLOAD</a>
+            </div>
+            <div class="icon">
+                <i class="fa fa-search"></i>
+                <a href="#">login</a>
+            </div>
+        </nav>
+        <section class="h-text">
+            <i class="fa fa-camera" id="camera"></i>
+            <h1 data-aos="fade-up">Take the hassle out of icons in your website.</h1>
+            <input type="text" name="" placeholder="Search her">
+            <button><i class="fa fa-search"></i></button>
+
+        </section>
+
+    </header>
+
+    <section class="filter-gallery">
+        <div class="protfolio-menu">
+            <ul>
+                <li class="active" data-filter="*"> All</li>
+                <li data-filter=".Nature">Nature</li>
+                <li data-filter=".Wedding">Wedding</li>
+                <li data-filter=".Faishon">Faishon</li>
+            </ul>
+        </div>
+        <div class="protfolio-itme">
+            <div class="item nature" data-aos="flip-left" data-aos-offset="100">
+                <img src="image/p1.jpg" width="100" height="100">
+            </div>
+            <div class="item wedding" data-aos="flip-left" data-aos-offset="200">
+                <img src="image/p2 (2).jpg" width="100" height="100">
+            </div>
+            <div class="item faishon" data-aos="flip-left" data-aos-offset="300">
+                <img src="image/p3 (2).jpg" width="100" height="100">
+            </div>
+            <div class="item nature">
+                <img src="image/p4 (2).jpg" width="100" height="100">
+            </div>
+            <div class="item wedding">
+                <img src="image/p5.jpg" width="100" height="100">
+            </div>
+            <div class="item faishon">
+                <img src="image/p6 (2).jpg" width="100" height="100">
+            </div>
+            <div class="item nature">
+                <img src="image/p7.jpg" width="100" height="100">
+            </div>
+            <div class="item wedding">
+                <img src="image/p8.jpg" width="100" height="100">
+            </div>
+            <div class="item faishon">
+                <img src="image/p9.jpg" width="100" height="100">
+            </div>
+        </div>
+    </section>
+
+    <section class="member">
+        <div class="member-info">
+            <h1> Our<span>Information</span></h1>
+            <p>Whatour member saye</p>
+        </div>
+        <div class="member-card">
+            <img src="image/images.png">
+            <p>
+                Learn More! Worldwide Offers Therapeutic Expertise & Vital Strategic Services. Innovative Solutions. Advanced Workflow Process. 30 Years of Experience. Global Expertise. Award-Winning. Highlights: Full-Service Clinical Research Organization, High Quality
+                Staff Available.
+            </p>
+            <h2> Maria Sharapova</h2>
+            <img src="image/inst.png" width="100">
+            <img src="image/face.png" width="100">
+            <img src="image/tiw.png" width="100">
+            <img src="image/you.png" width="100">
+        </div>
+        <div class="m-image">
+            <img src="image/p7.jpg">
+            <img src="image/p9.jpg">
+            <img src="image/p5.jpg">
+            <img src="image/p1.jpg">
+            <img src="image/p3 (2).jpg">
+            <img src="image/p6 (2).jpg">
+        </div>
+    </section>
+
+    <footer>
+        <div class="newsletter">
+            <div>
+                <h2>Subscribe our newsletter</h2>
+                <p>
+                    We're a team of non-cynics who truly care for our work.
+                </p>
+            </div>
+            <div class="ntext">
+                <label>
+                    <input type="text" name="" placeholder="Enter your email ">
+                    <button>Subscribe</button>
+                </label>
+            </div>
+        </div>
+
+        <div class="f-contect">
+            <div>
+                <h1>Information</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut tenetur quod vel</p>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-telegram"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+            <div>
+                <h1>Useful link</h1>
+                <p>About us</p>
+                <p>Gallery</p>
+                <p>Download</p>
+                <p>Contact us</p>
+            </div>
+            <div>
+                <h1>Details</h1>
+                <p>Photographera</p>
+                <p>Gallery</p>
+                <p>Download</p>
+                <p>About us</p>
+            </div>
+            <div>
+                <h1>Help & Support</h1>
+                <p>Privacy policy</p>
+                <p>Term & Condition</p>
+                <p>Techincal Support</p>
+                <p>Customer care</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript">
+        $('.protfolio-itme').isotope({
+            // options
+            itemSelector: '.item',
+            layoutMode: 'fitRows'
+        });
+
+        $('.protfolio-menu ul li').click(function() {
+            $('.protfolio-menu ul li').removeClass('active');
+            $(this).addClass('active');
+
+
+            var Selector = $(this).attr('data-filter');
+            $('.protfolio-itme').isotope({
+                filter: Selector
+            });
+            return false;
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
